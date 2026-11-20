@@ -21,4 +21,5 @@ Desglose visual de subtotal, descuento, domicilio, ITBIS y total a pagar.
 
 ## Captura de prueba
 Prueba Carlos Méndez:
-<img width="850" height="705" alt="image" src="https://github.com/user-attachments/assets/c87a1235-719d-42c0-8ec0-d349b0d21cac" />
+<img width="993" height="705" alt="image" src="https://github.com/user-attachments/assets/ab9080ea-adb4-462e-963d-373d96aad645" />
+
