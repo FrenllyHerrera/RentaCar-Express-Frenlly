@@ -28,12 +28,12 @@ namespace RentaCar_Express_Frenlly
             txtTarifa = new TextBox();
             nudDias = new NumericUpDown();
             groupBox1 = new GroupBox();
-            rbtBasico = new RadioButton();
             rbtCompleto = new RadioButton();
+            rbtBasico = new RadioButton();
             chkGps = new CheckBox();
             groupBox2 = new GroupBox();
-            rbtSucursal = new RadioButton();
             rbtDomicilio = new RadioButton();
+            rbtSucursal = new RadioButton();
             lblEncabezado = new Label();
             lblSubtotal = new Label();
             lstAlquileres = new ListBox();
@@ -72,7 +72,7 @@ namespace RentaCar_Express_Frenlly
             // chkCorporativo
             // 
             chkCorporativo.AutoSize = true;
-            chkCorporativo.Location = new Point(24, 59);
+            chkCorporativo.Location = new Point(44, 59);
             chkCorporativo.Name = "chkCorporativo";
             chkCorporativo.Size = new Size(191, 29);
             chkCorporativo.TabIndex = 2;
@@ -88,14 +88,14 @@ namespace RentaCar_Express_Frenlly
             // 
             // txtTarifa
             // 
-            txtTarifa.Location = new Point(154, 178);
+            txtTarifa.Location = new Point(154, 189);
             txtTarifa.Name = "txtTarifa";
             txtTarifa.Size = new Size(306, 31);
             txtTarifa.TabIndex = 4;
             // 
             // nudDias
             // 
-            nudDias.Location = new Point(131, 230);
+            nudDias.Location = new Point(154, 236);
             nudDias.Name = "nudDias";
             nudDias.Size = new Size(232, 31);
             nudDias.TabIndex = 5;
@@ -106,10 +106,21 @@ namespace RentaCar_Express_Frenlly
             groupBox1.Controls.Add(rbtBasico);
             groupBox1.Location = new Point(44, 312);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(186, 150);
+            groupBox1.Size = new Size(244, 150);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Seguro";
+            // 
+            // rbtCompleto
+            // 
+            rbtCompleto.AutoSize = true;
+            rbtCompleto.Location = new Point(20, 102);
+            rbtCompleto.Name = "rbtCompleto";
+            rbtCompleto.Size = new Size(207, 29);
+            rbtCompleto.TabIndex = 1;
+            rbtCompleto.TabStop = true;
+            rbtCompleto.Text = "Completo (+RD$300)";
+            rbtCompleto.UseVisualStyleBackColor = true;
             // 
             // rbtBasico
             // 
@@ -122,25 +133,14 @@ namespace RentaCar_Express_Frenlly
             rbtBasico.Text = "Basico";
             rbtBasico.UseVisualStyleBackColor = true;
             // 
-            // rbtCompleto
-            // 
-            rbtCompleto.AutoSize = true;
-            rbtCompleto.Location = new Point(20, 102);
-            rbtCompleto.Name = "rbtCompleto";
-            rbtCompleto.Size = new Size(116, 29);
-            rbtCompleto.TabIndex = 1;
-            rbtCompleto.TabStop = true;
-            rbtCompleto.Text = "Completo";
-            rbtCompleto.UseVisualStyleBackColor = true;
-            // 
             // chkGps
             // 
             chkGps.AutoSize = true;
-            chkGps.Location = new Point(44, 505);
+            chkGps.Location = new Point(44, 517);
             chkGps.Name = "chkGps";
-            chkGps.Size = new Size(69, 29);
+            chkGps.Size = new Size(222, 29);
             chkGps.TabIndex = 7;
-            chkGps.Text = "Gps";
+            chkGps.Text = "Gps (+RD$100 por día)";
             chkGps.UseVisualStyleBackColor = true;
             // 
             // groupBox2
@@ -149,21 +149,10 @@ namespace RentaCar_Express_Frenlly
             groupBox2.Controls.Add(rbtSucursal);
             groupBox2.Location = new Point(316, 312);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(203, 150);
+            groupBox2.Size = new Size(229, 150);
             groupBox2.TabIndex = 8;
             groupBox2.TabStop = false;
             groupBox2.Text = "Entrega";
-            // 
-            // rbtSucursal
-            // 
-            rbtSucursal.AutoSize = true;
-            rbtSucursal.Location = new Point(20, 40);
-            rbtSucursal.Name = "rbtSucursal";
-            rbtSucursal.Size = new Size(102, 29);
-            rbtSucursal.TabIndex = 0;
-            rbtSucursal.TabStop = true;
-            rbtSucursal.Text = "Sucursal";
-            rbtSucursal.UseVisualStyleBackColor = true;
             // 
             // rbtDomicilio
             // 
@@ -176,10 +165,21 @@ namespace RentaCar_Express_Frenlly
             rbtDomicilio.Text = "Domicilio";
             rbtDomicilio.UseVisualStyleBackColor = true;
             // 
+            // rbtSucursal
+            // 
+            rbtSucursal.AutoSize = true;
+            rbtSucursal.Location = new Point(20, 40);
+            rbtSucursal.Name = "rbtSucursal";
+            rbtSucursal.Size = new Size(102, 29);
+            rbtSucursal.TabIndex = 0;
+            rbtSucursal.TabStop = true;
+            rbtSucursal.Text = "Sucursal";
+            rbtSucursal.UseVisualStyleBackColor = true;
+            // 
             // lblEncabezado
             // 
             lblEncabezado.AutoSize = true;
-            lblEncabezado.Location = new Point(538, 94);
+            lblEncabezado.Location = new Point(555, 94);
             lblEncabezado.Name = "lblEncabezado";
             lblEncabezado.Size = new Size(107, 25);
             lblEncabezado.TabIndex = 9;
@@ -188,7 +188,7 @@ namespace RentaCar_Express_Frenlly
             // lblSubtotal
             // 
             lblSubtotal.AutoSize = true;
-            lblSubtotal.Location = new Point(566, 333);
+            lblSubtotal.Location = new Point(566, 352);
             lblSubtotal.Name = "lblSubtotal";
             lblSubtotal.Size = new Size(79, 25);
             lblSubtotal.TabIndex = 10;
@@ -197,15 +197,15 @@ namespace RentaCar_Express_Frenlly
             // lstAlquileres
             // 
             lstAlquileres.FormattingEnabled = true;
-            lstAlquileres.Location = new Point(534, 128);
+            lstAlquileres.Location = new Point(555, 122);
             lstAlquileres.Name = "lstAlquileres";
-            lstAlquileres.Size = new Size(290, 129);
+            lstAlquileres.Size = new Size(406, 179);
             lstAlquileres.TabIndex = 11;
             // 
             // lblDescuento
             // 
             lblDescuento.AutoSize = true;
-            lblDescuento.Location = new Point(558, 377);
+            lblDescuento.Location = new Point(566, 389);
             lblDescuento.Name = "lblDescuento";
             lblDescuento.Size = new Size(96, 25);
             lblDescuento.TabIndex = 12;
@@ -214,7 +214,7 @@ namespace RentaCar_Express_Frenlly
             // lblDomicilio
             // 
             lblDomicilio.AutoSize = true;
-            lblDomicilio.Location = new Point(558, 418);
+            lblDomicilio.Location = new Point(566, 437);
             lblDomicilio.Name = "lblDomicilio";
             lblDomicilio.Size = new Size(87, 25);
             lblDomicilio.TabIndex = 13;
@@ -223,7 +223,7 @@ namespace RentaCar_Express_Frenlly
             // lblItbis
             // 
             lblItbis.AutoSize = true;
-            lblItbis.Location = new Point(274, 454);
+            lblItbis.Location = new Point(567, 479);
             lblItbis.Name = "lblItbis";
             lblItbis.Size = new Size(46, 25);
             lblItbis.TabIndex = 14;
@@ -232,17 +232,18 @@ namespace RentaCar_Express_Frenlly
             // lblTotal
             // 
             lblTotal.AutoSize = true;
-            lblTotal.Location = new Point(499, 492);
+            lblTotal.Location = new Point(567, 521);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(114, 25);
             lblTotal.TabIndex = 15;
             lblTotal.Text = "Total a pagar";
+            lblTotal.Click += LblTotal_Click;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(566, 22);
+            btnAgregar.Location = new Point(555, 22);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(188, 54);
+            btnAgregar.Size = new Size(406, 54);
             btnAgregar.TabIndex = 16;
             btnAgregar.Text = "Agregar al cliente";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -250,9 +251,9 @@ namespace RentaCar_Express_Frenlly
             // 
             // btnCalcular
             // 
-            btnCalcular.Location = new Point(34, 560);
+            btnCalcular.Location = new Point(44, 573);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(146, 34);
+            btnCalcular.Size = new Size(146, 63);
             btnCalcular.TabIndex = 17;
             btnCalcular.Text = "Calcular total";
             btnCalcular.UseVisualStyleBackColor = true;
@@ -260,9 +261,9 @@ namespace RentaCar_Express_Frenlly
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(232, 560);
+            btnLimpiar.Location = new Point(225, 573);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(161, 34);
+            btnLimpiar.Size = new Size(161, 63);
             btnLimpiar.TabIndex = 18;
             btnLimpiar.Text = "Nuevo alquiler";
             btnLimpiar.UseVisualStyleBackColor = true;
@@ -270,9 +271,9 @@ namespace RentaCar_Express_Frenlly
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(501, 560);
+            btnSalir.Location = new Point(433, 573);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(112, 57);
+            btnSalir.Size = new Size(112, 63);
             btnSalir.TabIndex = 19;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -281,7 +282,7 @@ namespace RentaCar_Express_Frenlly
             // lblCliente
             // 
             lblCliente.AutoSize = true;
-            lblCliente.Location = new Point(24, 25);
+            lblCliente.Location = new Point(44, 22);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new Size(69, 25);
             lblCliente.TabIndex = 20;
@@ -290,7 +291,7 @@ namespace RentaCar_Express_Frenlly
             // lblSalida
             // 
             lblSalida.AutoSize = true;
-            lblSalida.Location = new Point(23, 104);
+            lblSalida.Location = new Point(44, 100);
             lblSalida.Name = "lblSalida";
             lblSalida.Size = new Size(63, 25);
             lblSalida.TabIndex = 21;
@@ -299,7 +300,7 @@ namespace RentaCar_Express_Frenlly
             // lblVehiculo
             // 
             lblVehiculo.AutoSize = true;
-            lblVehiculo.Location = new Point(27, 140);
+            lblVehiculo.Location = new Point(44, 143);
             lblVehiculo.Name = "lblVehiculo";
             lblVehiculo.Size = new Size(82, 25);
             lblVehiculo.TabIndex = 22;
@@ -308,7 +309,7 @@ namespace RentaCar_Express_Frenlly
             // lblTarifa
             // 
             lblTarifa.AutoSize = true;
-            lblTarifa.Location = new Point(34, 181);
+            lblTarifa.Location = new Point(44, 189);
             lblTarifa.Name = "lblTarifa";
             lblTarifa.Size = new Size(57, 25);
             lblTarifa.TabIndex = 23;
@@ -317,7 +318,7 @@ namespace RentaCar_Express_Frenlly
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(44, 232);
+            label1.Location = new Point(44, 242);
             label1.Name = "label1";
             label1.Size = new Size(50, 25);
             label1.TabIndex = 24;
@@ -328,7 +329,7 @@ namespace RentaCar_Express_Frenlly
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
-            ClientSize = new Size(846, 658);
+            ClientSize = new Size(989, 658);
             Controls.Add(label1);
             Controls.Add(lblTarifa);
             Controls.Add(lblVehiculo);
