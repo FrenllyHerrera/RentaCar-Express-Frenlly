@@ -21,5 +21,8 @@ Desglose visual de subtotal, descuento, domicilio, ITBIS y total a pagar.
 
 ## Captura de prueba
 Prueba Carlos Méndez:
+## Primero vacío:
+<img width="993" height="705" alt="image" src="https://github.com/user-attachments/assets/70da4eeb-d0ea-445f-a8bd-fddd83141ebe" />
+## Segundo lista con los dos servicios y el total:
 <img width="993" height="705" alt="image" src="https://github.com/user-attachments/assets/ab9080ea-adb4-462e-963d-373d96aad645" />
 
